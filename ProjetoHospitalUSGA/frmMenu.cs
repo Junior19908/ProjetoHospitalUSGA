@@ -1,4 +1,6 @@
 ﻿using ProjetoHospitalUSGA.Aplicacoes;
+using ProjetoHospitalUSGA.Ferramentas_Administrativas;
+using ProjetoHospitalUSGA.SigTI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,6 +40,18 @@ namespace ProjetoHospitalUSGA
         {
             frmMovAtestados frmMov = new frmMovAtestados();
             frmMov.ShowDialog();
+        }
+
+        private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSobre frmSobre = new frmSobre();
+            frmSobre.ShowDialog();
+        }
+
+        private void exibirFuncionáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFuncionarios frmFuncionarios = new frmFuncionarios();
+            frmFuncionarios.ShowDialog();
         }
     }
 }

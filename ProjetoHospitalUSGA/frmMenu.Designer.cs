@@ -76,6 +76,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.exibirFuncionáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarFuncionáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
@@ -97,7 +99,7 @@
             this.sobreToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(17, 93);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(377, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(450, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -204,6 +206,9 @@
             // 
             // pacientesToolStripMenuItem
             // 
+            this.pacientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exibirFuncionáriosToolStripMenuItem,
+            this.editarFuncionáriosToolStripMenuItem});
             this.pacientesToolStripMenuItem.Name = "pacientesToolStripMenuItem";
             this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(358, 22);
             this.pacientesToolStripMenuItem.Text = "Pacientes";
@@ -376,6 +381,7 @@
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
             this.sobreToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.sobreToolStripMenuItem.Text = "&Sobre";
+            this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
@@ -443,6 +449,19 @@
             this.label1.Size = new System.Drawing.Size(229, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Menu Inicial";
+            // 
+            // exibirFuncionáriosToolStripMenuItem
+            // 
+            this.exibirFuncionáriosToolStripMenuItem.Name = "exibirFuncionáriosToolStripMenuItem";
+            this.exibirFuncionáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exibirFuncionáriosToolStripMenuItem.Text = "Exibir Funcionários";
+            this.exibirFuncionáriosToolStripMenuItem.Click += new System.EventHandler(this.exibirFuncionáriosToolStripMenuItem_Click);
+            // 
+            // editarFuncionáriosToolStripMenuItem
+            // 
+            this.editarFuncionáriosToolStripMenuItem.Name = "editarFuncionáriosToolStripMenuItem";
+            this.editarFuncionáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editarFuncionáriosToolStripMenuItem.Text = "Editar Funcionários";
             // 
             // pictureBox1
             // 
@@ -544,6 +563,8 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ToolStripMenuItem exibirFuncionáriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editarFuncionáriosToolStripMenuItem;
     }
 }
 
