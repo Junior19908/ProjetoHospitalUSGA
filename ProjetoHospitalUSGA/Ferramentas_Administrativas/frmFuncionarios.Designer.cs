@@ -112,10 +112,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtCpf = new System.Windows.Forms.TextBox();
-            this.btnPesquisar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnPesquisar = new System.Windows.Forms.Button();
+            this.txtCpf = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnCadastrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dBSHPtb_func)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_funcionariosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_funcionariosDataGridView)).BeginInit();
@@ -683,9 +684,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(9, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(630, 38);
+            this.label1.Size = new System.Drawing.Size(521, 38);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Modulo de Cadastro de Funcionários";
+            this.label1.Text = "Modulo de Edição de Cadastro";
             // 
             // panel1
             // 
@@ -712,6 +713,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnCadastrar);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.btnPesquisar);
             this.groupBox1.Controls.Add(this.txtCpf);
@@ -722,23 +724,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtro";
             // 
-            // txtCpf
-            // 
-            this.txtCpf.Location = new System.Drawing.Point(52, 19);
-            this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(196, 20);
-            this.txtCpf.TabIndex = 0;
-            // 
-            // btnPesquisar
-            // 
-            this.btnPesquisar.Location = new System.Drawing.Point(722, 11);
-            this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(75, 35);
-            this.btnPesquisar.TabIndex = 1;
-            this.btnPesquisar.Text = "&Pesquisar";
-            this.btnPesquisar.UseVisualStyleBackColor = true;
-            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -748,6 +733,23 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "CPF.:";
             // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.Location = new System.Drawing.Point(608, 10);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(75, 35);
+            this.btnPesquisar.TabIndex = 1;
+            this.btnPesquisar.Text = "&Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
+            // 
+            // txtCpf
+            // 
+            this.txtCpf.Location = new System.Drawing.Point(52, 19);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(196, 20);
+            this.txtCpf.TabIndex = 0;
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(745, 455);
@@ -756,6 +758,15 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "&Voltar";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btnCadastrar
+            // 
+            this.btnCadastrar.Location = new System.Drawing.Point(689, 10);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(108, 35);
+            this.btnCadastrar.TabIndex = 3;
+            this.btnCadastrar.Text = "&Cadastrar Novo";
+            this.btnCadastrar.UseVisualStyleBackColor = true;
             // 
             // frmFuncionarios
             // 
@@ -874,5 +885,6 @@
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCadastrar;
     }
 }

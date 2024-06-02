@@ -42,6 +42,9 @@
             this.arquivosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabelasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exibirFuncionáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarFuncionáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroDeFuncionáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.especialidadesMédicasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.riscosOcupacionaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.atendentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -74,18 +77,16 @@
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.exibirFuncionáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editarFuncionáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -99,7 +100,7 @@
             this.sobreToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(17, 93);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(450, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(497, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -208,10 +209,31 @@
             // 
             this.pacientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exibirFuncionáriosToolStripMenuItem,
-            this.editarFuncionáriosToolStripMenuItem});
+            this.editarFuncionáriosToolStripMenuItem,
+            this.cadastroDeFuncionáriosToolStripMenuItem});
             this.pacientesToolStripMenuItem.Name = "pacientesToolStripMenuItem";
             this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(358, 22);
             this.pacientesToolStripMenuItem.Text = "Pacientes";
+            // 
+            // exibirFuncionáriosToolStripMenuItem
+            // 
+            this.exibirFuncionáriosToolStripMenuItem.Name = "exibirFuncionáriosToolStripMenuItem";
+            this.exibirFuncionáriosToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.exibirFuncionáriosToolStripMenuItem.Text = "Exibir Funcionários";
+            this.exibirFuncionáriosToolStripMenuItem.Click += new System.EventHandler(this.exibirFuncionáriosToolStripMenuItem_Click);
+            // 
+            // editarFuncionáriosToolStripMenuItem
+            // 
+            this.editarFuncionáriosToolStripMenuItem.Name = "editarFuncionáriosToolStripMenuItem";
+            this.editarFuncionáriosToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.editarFuncionáriosToolStripMenuItem.Text = "Editar Funcionários";
+            // 
+            // cadastroDeFuncionáriosToolStripMenuItem
+            // 
+            this.cadastroDeFuncionáriosToolStripMenuItem.Name = "cadastroDeFuncionáriosToolStripMenuItem";
+            this.cadastroDeFuncionáriosToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.cadastroDeFuncionáriosToolStripMenuItem.Text = "Cadastro de Funcionários";
+            this.cadastroDeFuncionáriosToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeFuncionáriosToolStripMenuItem_Click);
             // 
             // especialidadesMédicasToolStripMenuItem
             // 
@@ -427,6 +449,17 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::ProjetoHospitalUSGA.Properties.Resources.hospital;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 16);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(800, 333);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -439,30 +472,6 @@
             this.panel1.Size = new System.Drawing.Size(803, 61);
             this.panel1.TabIndex = 3;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Georgia", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(9, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(229, 38);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Menu Inicial";
-            // 
-            // exibirFuncionáriosToolStripMenuItem
-            // 
-            this.exibirFuncionáriosToolStripMenuItem.Name = "exibirFuncionáriosToolStripMenuItem";
-            this.exibirFuncionáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exibirFuncionáriosToolStripMenuItem.Text = "Exibir Funcionários";
-            this.exibirFuncionáriosToolStripMenuItem.Click += new System.EventHandler(this.exibirFuncionáriosToolStripMenuItem_Click);
-            // 
-            // editarFuncionáriosToolStripMenuItem
-            // 
-            this.editarFuncionáriosToolStripMenuItem.Name = "editarFuncionáriosToolStripMenuItem";
-            this.editarFuncionáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.editarFuncionáriosToolStripMenuItem.Text = "Editar Funcionários";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -474,16 +483,16 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // label1
             // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::ProjetoHospitalUSGA.Properties.Resources.hospital;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 16);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(800, 333);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Georgia", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(9, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(229, 38);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Menu Inicial";
             // 
             // frmMenu
             // 
@@ -503,10 +512,10 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -565,6 +574,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ToolStripMenuItem exibirFuncionáriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editarFuncionáriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastroDeFuncionáriosToolStripMenuItem;
     }
 }
 

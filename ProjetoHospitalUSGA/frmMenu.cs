@@ -53,5 +53,11 @@ namespace ProjetoHospitalUSGA
             frmFuncionarios frmFuncionarios = new frmFuncionarios();
             frmFuncionarios.ShowDialog();
         }
+
+        private void cadastroDeFuncionáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastroFuncionario frm = new frmCadastroFuncionario();
+            frm.ShowDialog();
+        }
     }
 }
