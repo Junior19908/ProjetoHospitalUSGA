@@ -53,6 +53,8 @@ namespace ProjetoHospitalUSGA.Ferramentas_Administrativas
                 "Tocantins (TO)"
             };
             comboBoxEstados.DataSource = estados;
+            comboBoxUFTITULO.DataSource = estados;
+            comboBoxUFCTPS.DataSource = estados;
             comboBoxEstados.SelectedIndexChanged += new EventHandler(ComboBoxEstados_SelectedIndexChanged);
 
         }
@@ -101,6 +103,16 @@ namespace ProjetoHospitalUSGA.Ferramentas_Administrativas
             {
                 comboBoxMunicipios.DataSource = null;
             }
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Cadastro realizado do funcinário " + nomeCompleto.Text + " com a idade de " + txtIdade.Text);
+        }
+
+        private void textBox26_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
